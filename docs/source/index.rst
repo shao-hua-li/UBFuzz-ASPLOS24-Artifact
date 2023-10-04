@@ -1,22 +1,40 @@
-Welcome to Lumache's documentation!
+Welcome to UBFuzz ASPLOS'24 Artifact!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+Getting started (Kick-the-tire)
+---------------
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+First, enter the docker container:
+
+
+.. code-block:: console
+
+  $ cd /path/to/the/artifact/
+  $ ./start-container.py
+
+Then, execute the following command **in the container**:
+
+.. code-block:: console
+
+  $ /artifact/kick/kick.py
 
 .. note::
 
-   This project is under active development.
+   The expected exeuction time should be less than 10 mins.
+
+If you see **Kick-the-tire passed!**, you are all set to go.
+
+
+Next step
+----------
+
+For full evaluation, please go to :doc:`/evaluation`
 
 Contents
 --------
 
 .. toctree::
 
-   usage
-   api
+   evaluation
+   generate-ub
+   ubgen

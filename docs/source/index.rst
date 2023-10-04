@@ -4,12 +4,19 @@ Welcome to UBFuzz ASPLOS'24 Artifact!
 Getting started (Kick-the-tire)
 ---------------
 
-First, enter the docker container:
+First, download the artifact from here `Artifact <https://drive.google.com/drive/folders/1f49-vwr0qOCe-8ApXhaNSmRVHSuMhVrj?usp=sharing>`_ , then untar the artifact:
+
+.. code-block:: console
+
+  $ tar -xvf artifact_asplos24.tar.gz
+
+Then, enter the docker container:
 
 
 .. code-block:: console
 
   $ cd /path/to/the/artifact/
+  $ docker load -i image_artifact_asplos24_ubfuzz.tar
   $ ./start-container.py
 
 Then, execute the following command **in the container**:

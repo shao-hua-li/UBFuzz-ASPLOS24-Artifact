@@ -44,11 +44,11 @@ In the paper, we claimed that "`Overall, we reported 31 bugs...`"
 and we showed bug details in Table 3.
 You can find the evidence in our `Bug Report Table <https://docs.google.com/spreadsheets/d/1tDbtgK86Nq8EyB2Wk5ELyxpHBEKLLDlWfYu0tTFU3Cs/edit?usp=sharing/>`_
 
-We also include all bug-triggering testcases in ``/artifact/bugs/``. You can see the list of testcases by running
+We also include all bug-triggering testcases in ``/artifact/eval-bugs/``. You can see the list of testcases by running
 
 .. code-block:: console
 
-  $ tree /artifact/bugs/
+  $ tree /artifact/eval-bugs/
 
 Figures 7~10 are mainly obtained via manually analysis for each bug report.
 
@@ -95,7 +95,7 @@ To verify this result, execute
 
 .. code-block:: console
 
-  $ ./analyze_crash_site_mapping.py
+  $ ./UBFuzz/analyze_crash_site_mapping.py
 
 This script will read the meta-data from the last section and print out the Crash-Site Mapping result.
 

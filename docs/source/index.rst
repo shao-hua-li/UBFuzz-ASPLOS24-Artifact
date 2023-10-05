@@ -15,7 +15,7 @@ First, download the artifact from here `Artifact <https://drive.google.com/drive
 
 .. code-block:: console
 
-  $ tar -xvf artifact_asplos24.tar.gz
+  $ tar -xvf artifact_asplos24_ubfuzz.tar.gz
 
 Then, enter the docker container:
 
